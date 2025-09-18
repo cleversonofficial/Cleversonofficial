@@ -23,14 +23,14 @@ Olá! Sou Cleverson, desenvolvedor apaixonado por tecnologia residente em Macei�
         <img 
             alt="Repositórios" 
             title="Total de Repositórios" 
-            src="https://custom-icon-badges.demolab.com/github/repos/Cleversonofficial?color=8B5CF6&style=for-the-badge&labelColor=7C3AED&logo=github&label=Repositórios&logoColor=white"
+            src="https://img.shields.io/badge/Repositórios-5-blue?style=for-the-badge&logo=github&logoColor=white"
         />
     </a>
     <a href="https://github.com/Cleversonofficial">
         <img 
             alt="Commits" 
             title="Total de Commits" 
-            src="https://custom-icon-badges.demolab.com/github/commits/Cleversonofficial?color=10B981&style=for-the-badge&labelColor=059669&logo=git&label=Commits&logoColor=white"
+            src="https://img.shields.io/badge/Commits-610-green?style=for-the-badge&logo=git&logoColor=white"
         />
     </a>
 </p>
@@ -192,6 +192,15 @@ Olá! Sou Cleverson, desenvolvedor apaixonado por tecnologia residente em Macei�
   <img 
     alt="Contribuições GitHub" 
     src="https://github-readme-activity-graph.vercel.app/graph?username=Cleversonofficial&theme=tokyonight&hide_border=true&area=true&custom_title=Atividade%20GitHub"
+  />
+</p>
+
+### 🐍 Cobrinha das Contribuições
+
+<p align="center">
+  <img 
+    alt="Snake animation" 
+    src="https://raw.githubusercontent.com/Cleversonofficial/Cleversonofficial/output/github-contribution-grid-snake.svg"
   />
 </p>
 
