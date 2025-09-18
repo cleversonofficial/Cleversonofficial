@@ -200,7 +200,7 @@ Ol√°! Sou Cleverson, desenvolvedor apaixonado por tecnologia residente em Macei√
 <p align="center">
   <img 
     alt="Snake animation" 
-    src="https://raw.githubusercontent.com/Cleversonofficial/Cleversonofficial/output/github-contribution-grid-snake.svg"
+    src="https://raw.githubusercontent.com/Cleversonofficial/Cleversonofficial/output/snake.svg"
   />
 </p>
 
