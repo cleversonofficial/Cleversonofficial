@@ -218,14 +218,14 @@ Olá! Sou Cleverson, desenvolvedor apaixonado por tecnologia residente em Macei�
 ### 📞 Contato e Redes Sociais
 
 <p align="center">
-  <a href="mailto:seu-email@exemplo.com">
+  <a href="mailto:cleversons453@gmail.com">
     <img 
       alt="Email" 
       title="Envie-me um email" 
       src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"
     />
   </a>
-  <a href="https://linkedin.com/in/seu-linkedin">
+  <a href="https://www.linkedin.com/in/cleversonsilvaofficial/">
     <img 
       alt="LinkedIn" 
       title="Conecte-se comigo no LinkedIn" 
