@@ -98,25 +98,75 @@ def generate_snake_svg(username):
     width = max_weeks * (cell_size + cell_margin) + cell_margin
     height = max_days * (cell_size + cell_margin) + cell_margin + 20
     
-    # Iniciar SVG
+    # Iniciar SVG com animações
     svg_content = f'''<svg width="{width}" height="{height}" xmlns="http://www.w3.org/2000/svg">
     <style>
         .day {{
             fill: #161b22;
             stroke: #21262d;
             stroke-width: 1;
+            transition: all 0.3s ease;
+            cursor: pointer;
         }}
-        .day-1 {{ fill: #0e4429; }}
-        .day-2 {{ fill: #006d32; }}
-        .day-3 {{ fill: #26a641; }}
-        .day-4 {{ fill: #39d353; }}
+        .day:hover {{
+            stroke: #58a6ff;
+            stroke-width: 2;
+            transform: scale(1.1);
+        }}
+        .day-1 {{ 
+            fill: #0e4429; 
+            animation: pulse1 2s ease-in-out infinite alternate;
+        }}
+        .day-2 {{ 
+            fill: #006d32; 
+            animation: pulse2 2s ease-in-out infinite alternate;
+        }}
+        .day-3 {{ 
+            fill: #26a641; 
+            animation: pulse3 2s ease-in-out infinite alternate;
+        }}
+        .day-4 {{ 
+            fill: #39d353; 
+            animation: pulse4 2s ease-in-out infinite alternate;
+        }}
         .title {{
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
             font-size: 12px;
             fill: #8b949e;
+            animation: fadeIn 1s ease-in;
+        }}
+        .snake-path {{
+            fill: none;
+            stroke: #58a6ff;
+            stroke-width: 2;
+            stroke-dasharray: 5,5;
+            animation: dash 3s linear infinite;
+        }}
+        @keyframes pulse1 {{
+            0% {{ opacity: 0.7; }}
+            100% {{ opacity: 1; }}
+        }}
+        @keyframes pulse2 {{
+            0% {{ opacity: 0.8; }}
+            100% {{ opacity: 1; }}
+        }}
+        @keyframes pulse3 {{
+            0% {{ opacity: 0.9; }}
+            100% {{ opacity: 1; }}
+        }}
+        @keyframes pulse4 {{
+            0% {{ opacity: 0.9; }}
+            100% {{ opacity: 1; }}
+        }}
+        @keyframes fadeIn {{
+            0% {{ opacity: 0; }}
+            100% {{ opacity: 1; }}
+        }}
+        @keyframes dash {{
+            to {{ stroke-dashoffset: -10; }}
         }}
     </style>
-    <text x="10" y="15" class="title">Contribuições de {username}</text>
+    <text x="10" y="15" class="title">🐍 Cobrinha Animada de {username}</text>
 '''
     
     # Gerar grid de contribuições
