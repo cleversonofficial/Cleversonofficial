@@ -18,18 +18,23 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
           
-      # Snake Animation
-      - uses: Platane/snk@master
-        id: snake-gif
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          github_user_name: Cleversonofficial
-          svg_out_path: snake.svg
+          python-version: '3.9'
           
-      - name: Push to generate-output branch
+      - name: Install dependencies
+        run: |
+          pip install requests
+          
+      - name: Generate snake animation
+        run: |
+          python generate_snake.py
+          
+      - name: Commit and push
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git checkout -b generate-output || git checkout generate-output
           git add snake.svg
           git commit -m "Update snake animation" || exit 0
-          git push origin generate-output
+          git push
