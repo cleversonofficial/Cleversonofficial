@@ -94,12 +94,25 @@
             to { stroke-dashoffset: -10; }
         }
         @keyframes wiggle {
-            0% { transform: rotate(-3deg); }
-            100% { transform: rotate(3deg); }
+            0% { transform: rotate(-5deg) scale(1); }
+            25% { transform: rotate(0deg) scale(1.1); }
+            50% { transform: rotate(5deg) scale(1); }
+            75% { transform: rotate(0deg) scale(1.1); }
+            100% { transform: rotate(-5deg) scale(1); }
         }
         @keyframes slither {
-            0%, 100% { transform: translateX(0); }
-            50% { transform: translateX(2px); }
+            0% { transform: translateX(0px) translateY(0px); }
+            25% { transform: translateX(3px) translateY(-2px); }
+            50% { transform: translateX(6px) translateY(0px); }
+            75% { transform: translateX(3px) translateY(2px); }
+            100% { transform: translateX(0px) translateY(0px); }
+        }
+        @keyframes snake-wave {
+            0% { transform: translateX(0px) rotate(0deg); }
+            25% { transform: translateX(8px) rotate(2deg); }
+            50% { transform: translateX(16px) rotate(0deg); }
+            75% { transform: translateX(8px) rotate(-2deg); }
+            100% { transform: translateX(0px) rotate(0deg); }
         }
     </style>
     <text x="10" y="15" class="title">🐍 Cobrinha Animada de Cleversonofficial</text>
@@ -474,15 +487,26 @@
     <rect x="626" y="70" width="10" height="10" class="day-4" rx="2"/>
     <rect x="626" y="82" width="10" height="10" class="day-4" rx="2"/>
     <rect x="626" y="94" width="10" height="10" class="day-4" rx="2"/>
-    <circle cx="608" cy="91" r="4" class="snake-head"/>
-    <circle cx="602" cy="91" r="3" class="snake-body"/>
-    <circle cx="596" cy="93" r="3" class="snake-body"/>
-    <circle cx="590" cy="91" r="3" class="snake-body"/>
-    <circle cx="584" cy="93" r="3" class="snake-body"/>
-    <circle cx="578" cy="91" r="3" class="snake-body"/>
-    <circle cx="572" cy="93" r="3" class="snake-body"/>
-    <circle cx="566" cy="91" r="3" class="snake-body"/>
-    <circle cx="560" cy="93" r="3" class="snake-body"/>
-    <circle cx="554" cy="91" r="2" fill="#39d353" opacity="0.7"/>
-    <path d="M 608,91 L 600,93 L 592,95 L 584,91 L 576,93 L 568,95 L 560,91 L 552,93 L 544,95 L 536,91" class="snake-path"/>
+    <circle cx="598" cy="86" r="5" class="snake-head"/>
+    <circle cx="590" cy="86" r="4" class="snake-body" style="animation-delay: 0.0s"/>
+    <circle cx="582" cy="89" r="4" class="snake-body" style="animation-delay: 0.1s"/>
+    <circle cx="574" cy="92" r="4" class="snake-body" style="animation-delay: 0.2s"/>
+    <circle cx="566" cy="86" r="4" class="snake-body" style="animation-delay: 0.30000000000000004s"/>
+    <circle cx="558" cy="89" r="4" class="snake-body" style="animation-delay: 0.4s"/>
+    <circle cx="550" cy="92" r="4" class="snake-body" style="animation-delay: 0.5s"/>
+    <circle cx="542" cy="86" r="4" class="snake-body" style="animation-delay: 0.6000000000000001s"/>
+    <circle cx="534" cy="89" r="4" class="snake-body" style="animation-delay: 0.7000000000000001s"/>
+    <circle cx="526" cy="92" r="4" class="snake-body" style="animation-delay: 0.8s"/>
+    <circle cx="518" cy="86" r="4" class="snake-body" style="animation-delay: 0.9s"/>
+    <circle cx="510" cy="89" r="4" class="snake-body" style="animation-delay: 1.0s"/>
+    <circle cx="502" cy="92" r="4" class="snake-body" style="animation-delay: 1.1s"/>
+    <circle cx="494" cy="86" r="3" fill="#39d353" opacity="0.8"/>
+    <path d="M 598,86 L 592,88 L 586,90 L 580,92 L 574,86 L 568,88 L 562,90 L 556,92 L 550,86 L 544,88 L 538,90 L 532,92 L 526,86 L 520,88 L 514,90" class="snake-path"/>
+    <circle cx="618" cy="76" r="3" fill="#ff4757" opacity="0.9"/>
+    <circle cx="514" cy="86" r="3" class="snake-body" style="animation-delay: 1.2000000000000002s"/>
+    <circle cx="508" cy="90" r="3" class="snake-body" style="animation-delay: 1.3s"/>
+    <circle cx="502" cy="86" r="3" class="snake-body" style="animation-delay: 1.4000000000000001s"/>
+    <circle cx="496" cy="90" r="3" class="snake-body" style="animation-delay: 1.5s"/>
+    <circle cx="490" cy="86" r="3" class="snake-body" style="animation-delay: 1.6s"/>
+    <circle cx="484" cy="90" r="3" class="snake-body" style="animation-delay: 1.7000000000000002s"/>
 </svg>

@@ -195,12 +195,25 @@ def generate_snake_svg(username):
             to {{ stroke-dashoffset: -10; }}
         }}
         @keyframes wiggle {{
-            0% {{ transform: rotate(-3deg); }}
-            100% {{ transform: rotate(3deg); }}
+            0% {{ transform: rotate(-5deg) scale(1); }}
+            25% {{ transform: rotate(0deg) scale(1.1); }}
+            50% {{ transform: rotate(5deg) scale(1); }}
+            75% {{ transform: rotate(0deg) scale(1.1); }}
+            100% {{ transform: rotate(-5deg) scale(1); }}
         }}
         @keyframes slither {{
-            0%, 100% {{ transform: translateX(0); }}
-            50% {{ transform: translateX(2px); }}
+            0% {{ transform: translateX(0px) translateY(0px); }}
+            25% {{ transform: translateX(3px) translateY(-2px); }}
+            50% {{ transform: translateX(6px) translateY(0px); }}
+            75% {{ transform: translateX(3px) translateY(2px); }}
+            100% {{ transform: translateX(0px) translateY(0px); }}
+        }}
+        @keyframes snake-wave {{
+            0% {{ transform: translateX(0px) rotate(0deg); }}
+            25% {{ transform: translateX(8px) rotate(2deg); }}
+            50% {{ transform: translateX(16px) rotate(0deg); }}
+            75% {{ transform: translateX(8px) rotate(-2deg); }}
+            100% {{ transform: translateX(0px) rotate(0deg); }}
         }}
     </style>
     <text x="10" y="15" class="title">🐍 Cobrinha Animada de {username}</text>
@@ -220,33 +233,46 @@ def generate_snake_svg(username):
             
             svg_content += f'    <rect x="{x}" y="{y}" width="{cell_size}" height="{cell_size}" class="{color_class}" rx="2"/>\n'
     
-    # Adicionar elementos da cobrinha animada
+    # Adicionar elementos da cobrinha animada com movimento realista
     # Cabeça da cobrinha
-    head_x = width - 30
-    head_y = height - 15
-    svg_content += f'    <circle cx="{head_x}" cy="{head_y}" r="4" class="snake-head"/>\n'
+    head_x = width - 40
+    head_y = height - 20
+    svg_content += f'    <circle cx="{head_x}" cy="{head_y}" r="5" class="snake-head"/>\n'
     
-    # Corpo da cobrinha (segmentos)
-    body_segments = 8
+    # Corpo da cobrinha (segmentos com movimento ondulante)
+    body_segments = 12
     for i in range(body_segments):
-        segment_x = head_x - (i + 1) * 6
-        segment_y = head_y + (i % 2) * 2
-        svg_content += f'    <circle cx="{segment_x}" cy="{segment_y}" r="3" class="snake-body"/>\n'
+        segment_x = head_x - (i + 1) * 8
+        segment_y = head_y + (i % 3) * 3
+        delay = i * 0.1
+        svg_content += f'    <circle cx="{segment_x}" cy="{segment_y}" r="4" class="snake-body" style="animation-delay: {delay}s"/>\n'
     
     # Cauda da cobrinha
-    tail_x = head_x - (body_segments + 1) * 6
+    tail_x = head_x - (body_segments + 1) * 8
     tail_y = head_y
-    svg_content += f'    <circle cx="{tail_x}" cy="{tail_y}" r="2" fill="#39d353" opacity="0.7"/>\n'
+    svg_content += f'    <circle cx="{tail_x}" cy="{tail_y}" r="3" fill="#39d353" opacity="0.8"/>\n'
     
-    # Caminho da cobrinha (linha tracejada)
+    # Caminho da cobrinha (linha tracejada animada)
     path_points = []
-    for i in range(10):
-        path_x = head_x - i * 8
-        path_y = head_y + (i % 3) * 2
+    for i in range(15):
+        path_x = head_x - i * 6
+        path_y = head_y + (i % 4) * 2
         path_points.append(f"{path_x},{path_y}")
     
     path_d = "M " + " L ".join(path_points)
     svg_content += f'    <path d="{path_d}" class="snake-path"/>\n'
+    
+    # Adicionar comida (ponto vermelho)
+    food_x = head_x + 20
+    food_y = head_y - 10
+    svg_content += f'    <circle cx="{food_x}" cy="{food_y}" r="3" fill="#ff4757" opacity="0.9"/>\n'
+    
+    # Adicionar mais segmentos da cobrinha para movimento mais fluido
+    for i in range(6):
+        extra_x = head_x - (body_segments + 2 + i) * 6
+        extra_y = head_y + (i % 2) * 4
+        delay = (body_segments + i) * 0.1
+        svg_content += f'    <circle cx="{extra_x}" cy="{extra_y}" r="3" class="snake-body" style="animation-delay: {delay}s"/>\n'
     
     svg_content += '</svg>'
     
