@@ -3,44 +3,10 @@
 **`Desenvolvedor FullStack em Andamento`**
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=58A6FF&center=true&vCenter=true&width=435&lines=Desenvolvedor+FullStack+em+Andamento;Apaixonado+por+Tecnologia;Em+busca+da+primeira+oportunidade;Sempre+aprendendo+algo+novo" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=58A6FF&center=true&vCenter=true&width=435&lines=Desenvolvedor+FullStack+em+Andamento;Apaixonado+por+Tecnologia;Em+busca+da+primeira+oportunidade;Sempre+aprendendo+algo+novo" alt="Typing SVG" />
 </div>
 
 Olá! Sou Cleverson, desenvolvedor apaixonado por tecnologia residente em Maceió-AL. Atualmente cursando Análise e Desenvolvimento de Sistemas e em busca da minha primeira oportunidade profissional na área de desenvolvimento.
-
-<div align="center">
-
-```css
-/* Animações CSS para o perfil */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-  40% { transform: translateY(-10px); }
-  60% { transform: translateY(-5px); }
-}
-
-@keyframes glow {
-  0%, 100% { box-shadow: 0 0 5px rgba(88, 166, 255, 0.5); }
-  50% { box-shadow: 0 0 20px rgba(88, 166, 255, 0.8); }
-}
-```
-
-</div>
 
 <p align="left">
     <a href="https://github.com/Cleversonofficial?tab=repositories&sort=stargazers">
@@ -48,9 +14,6 @@ Olá! Sou Cleverson, desenvolvedor apaixonado por tecnologia residente em Macei�
             alt="Total de estrelas" 
             title="Total de estrelas GitHub" 
             src="https://custom-icon-badges.demolab.com/github/stars/Cleversonofficial?color=55960c&style=for-the-badge&labelColor=488207&logo=star&label=estrelas"
-            style="transition: transform 0.3s ease;"
-            onmouseover="this.style.transform='scale(1.1) rotate(5deg)'"
-            onmouseout="this.style.transform='scale(1)'"
         />
     </a>
     <a href="https://github.com/Cleversonofficial?tab=followers">
@@ -58,9 +21,6 @@ Olá! Sou Cleverson, desenvolvedor apaixonado por tecnologia residente em Macei�
             alt="Seguidores" 
             title="Me siga no GitHub" 
             src="https://custom-icon-badges.demolab.com/github/followers/Cleversonofficial?color=236ad3&labelColor=1155ba&style=for-the-badge&logo=github&label=Seguidores&logoColor=white"
-            style="transition: transform 0.3s ease;"
-            onmouseover="this.style.transform='scale(1.1) rotate(-5deg)'"
-            onmouseout="this.style.transform='scale(1)'"
         />
     </a>
     <a href="https://github.com/Cleversonofficial?tab=repositories">
@@ -68,9 +28,6 @@ Olá! Sou Cleverson, desenvolvedor apaixonado por tecnologia residente em Macei�
             alt="Repositórios" 
             title="Total de Repositórios" 
             src="https://img.shields.io/badge/Repositórios-5-blue?style=for-the-badge&logo=github&logoColor=white"
-            style="transition: transform 0.3s ease;"
-            onmouseover="this.style.transform='scale(1.1) rotate(5deg)'"
-            onmouseout="this.style.transform='scale(1)'"
         />
     </a>
     <a href="https://github.com/Cleversonofficial">
@@ -78,9 +35,6 @@ Olá! Sou Cleverson, desenvolvedor apaixonado por tecnologia residente em Macei�
             alt="Commits" 
             title="Total de Commits" 
             src="https://img.shields.io/badge/Commits-610-green?style=for-the-badge&logo=git&logoColor=white"
-            style="transition: transform 0.3s ease;"
-            onmouseover="this.style.transform='scale(1.1) rotate(-5deg)'"
-            onmouseout="this.style.transform='scale(1)'"
         />
     </a>
 </p>
@@ -95,70 +49,56 @@ Olá! Sou Cleverson, desenvolvedor apaixonado por tecnologia residente em Macei�
     alt="HTML5" 
     title="HTML5" 
     width="40px" 
-    style="padding-right: 10px; transition: transform 0.3s ease; animation: bounce 2s infinite;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-    onmouseover="this.style.transform='scale(1.2) rotate(10deg)'"
-    onmouseout="this.style.transform='scale(1)'"
-/> 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" 
+/>
 <img 
     align="left" 
     alt="CSS3" 
     title="CSS3"
     width="40px" 
-    style="padding-right: 10px; transition: transform 0.3s ease; animation: bounce 2s infinite 0.2s;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-    onmouseover="this.style.transform='scale(1.2) rotate(-10deg)'"
-    onmouseout="this.style.transform='scale(1)'"
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" 
 />
 <img 
     align="left" 
     alt="JavaScript" 
     title="JavaScript"
     width="40px" 
-    style="padding-right: 10px; transition: transform 0.3s ease; animation: bounce 2s infinite 0.4s;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-    onmouseover="this.style.transform='scale(1.2) rotate(10deg)'"
-    onmouseout="this.style.transform='scale(1)'"
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" 
 />
 <img 
     align="left" 
     alt="TypeScript"
     title="TypeScript" 
     width="40px" 
-    style="padding-right: 10px; transition: transform 0.3s ease; animation: bounce 2s infinite 0.6s;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-    onmouseover="this.style.transform='scale(1.2) rotate(-10deg)'"
-    onmouseout="this.style.transform='scale(1)'"
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" 
 />
 <img 
     align="left" 
     alt="React" 
     title="React"
     width="40px" 
-    style="padding-right: 10px; transition: transform 0.3s ease; animation: bounce 2s infinite 0.8s;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-    onmouseover="this.style.transform='scale(1.2) rotate(10deg)'"
-    onmouseout="this.style.transform='scale(1)'"
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" 
 />
 <img 
     align="left" 
     alt="Next.js" 
     title="Next.js"
     width="40px" 
-    style="padding-right: 10px; transition: transform 0.3s ease; animation: bounce 2s infinite 1s;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
-    onmouseover="this.style.transform='scale(1.2) rotate(-10deg)'"
-    onmouseout="this.style.transform='scale(1)'"
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" 
 />
 <img 
     align="left" 
     alt="Tailwind CSS" 
     title="Tailwind CSS"
     width="40px" 
-    style="padding-right: 10px; transition: transform 0.3s ease; animation: bounce 2s infinite 1.2s;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-    onmouseover="this.style.transform='scale(1.2) rotate(10deg)'"
-    onmouseout="this.style.transform='scale(1)'"
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" 
 />
 
 <br/><br/>
