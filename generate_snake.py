@@ -98,7 +98,7 @@ def generate_snake_svg(username):
     width = max_weeks * (cell_size + cell_margin) + cell_margin
     height = max_days * (cell_size + cell_margin) + cell_margin + 20
     
-    # Iniciar SVG com animações
+    # Iniciar SVG com animações avançadas
     svg_content = f'''<svg width="{width}" height="{height}" xmlns="http://www.w3.org/2000/svg">
     <style>
         .day {{
@@ -115,25 +115,25 @@ def generate_snake_svg(username):
         }}
         .day-1 {{ 
             fill: #0e4429; 
-            animation: pulse1 2s ease-in-out infinite alternate;
+            animation: pulse1 2s ease-in-out infinite alternate, glow1 3s ease-in-out infinite;
         }}
         .day-2 {{ 
             fill: #006d32; 
-            animation: pulse2 2s ease-in-out infinite alternate;
+            animation: pulse2 2s ease-in-out infinite alternate, glow2 3s ease-in-out infinite;
         }}
         .day-3 {{ 
             fill: #26a641; 
-            animation: pulse3 2s ease-in-out infinite alternate;
+            animation: pulse3 2s ease-in-out infinite alternate, glow3 3s ease-in-out infinite;
         }}
         .day-4 {{ 
             fill: #39d353; 
-            animation: pulse4 2s ease-in-out infinite alternate;
+            animation: pulse4 2s ease-in-out infinite alternate, glow4 3s ease-in-out infinite;
         }}
         .title {{
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
             font-size: 12px;
             fill: #8b949e;
-            animation: fadeIn 1s ease-in;
+            animation: fadeIn 1s ease-in, bounce 2s ease-in-out infinite;
         }}
         .snake-path {{
             fill: none;
@@ -142,28 +142,65 @@ def generate_snake_svg(username):
             stroke-dasharray: 5,5;
             animation: dash 3s linear infinite;
         }}
+        .snake-head {{
+            fill: #ff6b6b;
+            animation: wiggle 1s ease-in-out infinite alternate;
+        }}
+        .snake-body {{
+            fill: #4ecdc4;
+            animation: slither 2s ease-in-out infinite;
+        }}
         @keyframes pulse1 {{
-            0% {{ opacity: 0.7; }}
-            100% {{ opacity: 1; }}
+            0% {{ opacity: 0.7; transform: scale(1); }}
+            100% {{ opacity: 1; transform: scale(1.05); }}
         }}
         @keyframes pulse2 {{
-            0% {{ opacity: 0.8; }}
-            100% {{ opacity: 1; }}
+            0% {{ opacity: 0.8; transform: scale(1); }}
+            100% {{ opacity: 1; transform: scale(1.05); }}
         }}
         @keyframes pulse3 {{
-            0% {{ opacity: 0.9; }}
-            100% {{ opacity: 1; }}
+            0% {{ opacity: 0.9; transform: scale(1); }}
+            100% {{ opacity: 1; transform: scale(1.05); }}
         }}
         @keyframes pulse4 {{
-            0% {{ opacity: 0.9; }}
-            100% {{ opacity: 1; }}
+            0% {{ opacity: 0.9; transform: scale(1); }}
+            100% {{ opacity: 1; transform: scale(1.05); }}
+        }}
+        @keyframes glow1 {{
+            0%, 100% {{ filter: drop-shadow(0 0 3px #0e4429); }}
+            50% {{ filter: drop-shadow(0 0 8px #0e4429); }}
+        }}
+        @keyframes glow2 {{
+            0%, 100% {{ filter: drop-shadow(0 0 3px #006d32); }}
+            50% {{ filter: drop-shadow(0 0 8px #006d32); }}
+        }}
+        @keyframes glow3 {{
+            0%, 100% {{ filter: drop-shadow(0 0 3px #26a641); }}
+            50% {{ filter: drop-shadow(0 0 8px #26a641); }}
+        }}
+        @keyframes glow4 {{
+            0%, 100% {{ filter: drop-shadow(0 0 3px #39d353); }}
+            50% {{ filter: drop-shadow(0 0 8px #39d353); }}
         }}
         @keyframes fadeIn {{
             0% {{ opacity: 0; }}
             100% {{ opacity: 1; }}
         }}
+        @keyframes bounce {{
+            0%, 20%, 50%, 80%, 100% {{ transform: translateY(0); }}
+            40% {{ transform: translateY(-5px); }}
+            60% {{ transform: translateY(-3px); }}
+        }}
         @keyframes dash {{
             to {{ stroke-dashoffset: -10; }}
+        }}
+        @keyframes wiggle {{
+            0% {{ transform: rotate(-3deg); }}
+            100% {{ transform: rotate(3deg); }}
+        }}
+        @keyframes slither {{
+            0%, 100% {{ transform: translateX(0); }}
+            50% {{ transform: translateX(2px); }}
         }}
     </style>
     <text x="10" y="15" class="title">🐍 Cobrinha Animada de {username}</text>
@@ -182,6 +219,34 @@ def generate_snake_svg(username):
             color_class = f"day-{min(count, 4)}" if count > 0 else "day"
             
             svg_content += f'    <rect x="{x}" y="{y}" width="{cell_size}" height="{cell_size}" class="{color_class}" rx="2"/>\n'
+    
+    # Adicionar elementos da cobrinha animada
+    # Cabeça da cobrinha
+    head_x = width - 30
+    head_y = height - 15
+    svg_content += f'    <circle cx="{head_x}" cy="{head_y}" r="4" class="snake-head"/>\n'
+    
+    # Corpo da cobrinha (segmentos)
+    body_segments = 8
+    for i in range(body_segments):
+        segment_x = head_x - (i + 1) * 6
+        segment_y = head_y + (i % 2) * 2
+        svg_content += f'    <circle cx="{segment_x}" cy="{segment_y}" r="3" class="snake-body"/>\n'
+    
+    # Cauda da cobrinha
+    tail_x = head_x - (body_segments + 1) * 6
+    tail_y = head_y
+    svg_content += f'    <circle cx="{tail_x}" cy="{tail_y}" r="2" fill="#39d353" opacity="0.7"/>\n'
+    
+    # Caminho da cobrinha (linha tracejada)
+    path_points = []
+    for i in range(10):
+        path_x = head_x - i * 8
+        path_y = head_y + (i % 3) * 2
+        path_points.append(f"{path_x},{path_y}")
+    
+    path_d = "M " + " L ".join(path_points)
+    svg_content += f'    <path d="{path_d}" class="snake-path"/>\n'
     
     svg_content += '</svg>'
     
