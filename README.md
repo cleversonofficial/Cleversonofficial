@@ -177,7 +177,7 @@ Ol√°! Sou Cleverson, desenvolvedor apaixonado por tecnologia residente em Macei√
   <img 
     alt="GitHub Stats" 
     height="200" 
-    src="https://github-readme-stats.vercel.app/api?username=Cleversonofficial&show_icons=true&theme=tokyonight&include_all_commits=true&locale=pt-br&hide_border=true&count_private=true" 
+    src="https://github-readme-stats.vercel.app/api?username=Cleversonofficial&show_icons=true&theme=tokyonight&include_all_commits=true&locale=pt-br&hide_border=true" 
   />
   <img 
     alt="Linguagens Mais Usadas" 
@@ -200,7 +200,7 @@ Ol√°! Sou Cleverson, desenvolvedor apaixonado por tecnologia residente em Macei√
 <p align="center">
   <img 
     alt="Snake animation" 
-    src="https://raw.githubusercontent.com/Cleversonofficial/Cleversonofficial/output/snake.svg"
+    src="https://raw.githubusercontent.com/Cleversonofficial/Cleversonofficial/generate-output/snake.svg"
   />
 </p>
 

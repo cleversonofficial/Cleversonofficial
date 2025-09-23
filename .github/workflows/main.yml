@@ -25,11 +25,11 @@ jobs:
           github_user_name: Cleversonofficial
           svg_out_path: snake.svg
           
-      - name: Push to output branch
+      - name: Push to generate-output branch
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git checkout -b output || git checkout output
+          git checkout -b generate-output || git checkout generate-output
           git add snake.svg
           git commit -m "Update snake animation" || exit 0
-          git push origin output
+          git push origin generate-output
