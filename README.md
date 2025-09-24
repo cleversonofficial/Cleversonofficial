@@ -35,7 +35,7 @@ Desenvolvedor FullStack apaixonado por tecnologia e inovação, residente em **M
 
 <div align="center">
 
-![GitHub Streak](https://github-readme-streak-stats.vercel.app/?user=Cleversonofficial&theme=tokyonight&hide_border=true)
+![GitHub Streak](https://github-readme-streak-stats.vercel.app/?user=Cleversonofficial&theme=tokyonight&hide_border=true&exclude_days=Sat,Sun)
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Cleversonofficial&show_icons=true&theme=tokyonight&hide_border=true&count_private=false&include_all_commits=false&locale=pt-br)
 
 </div>
