@@ -29,14 +29,20 @@ Desenvolvedor FullStack apaixonado por tecnologia e inovação, residente em **M
 ![Profile Views](https://komarev.com/ghpvc/?username=Cleversonofficial&style=for-the-badge&color=blue)
 ![GitHub Stars](https://img.shields.io/github/stars/Cleversonofficial?style=for-the-badge&color=yellow&label=Stars)
 ![GitHub Followers](https://img.shields.io/github/followers/Cleversonofficial?style=for-the-badge&color=blue&label=Followers)
-![GitHub Repos](https://img.shields.io/github/repos/Cleversonofficial?style=for-the-badge&color=green&label=Repositories)
+![GitHub Repos](https://img.shields.io/badge/Repositories-5-green?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 
 <div align="center">
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Cleversonofficial&theme=tokyonight&hide_border=true)
+![GitHub Streak](https://github-readme-streak-stats.vercel.app/?user=Cleversonofficial&theme=tokyonight&hide_border=true)
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Cleversonofficial&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&locale=pt-br)
+
+</div>
+
+<div align="center">
+
+![Linguagens Mais Usadas](https://github-readme-stats.vercel.app/api/top-langs/?username=Cleversonofficial&theme=tokyonight&layout=compact&custom_title=Linguagens&langs_count=8&hide_border=true)
 
 </div>
 
@@ -53,7 +59,7 @@ Desenvolvedor FullStack apaixonado por tecnologia e inovação, residente em **M
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
 </div>
 
@@ -61,7 +67,7 @@ Desenvolvedor FullStack apaixonado por tecnologia e inovação, residente em **M
 <div align="center">
 
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
